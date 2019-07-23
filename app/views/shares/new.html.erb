@@ -1,0 +1,48 @@
+<div class="container" id="timeline-wrapper">
+       <div class="row mt-5">
+           <div class="col-sm-6 col-md-6">
+               <div class="contact-bg">
+                   <h4>Let's share weather!!</h4>
+                   <p>Please tell me the present weather.As it is directed, please input to the form. </p>
+                   <form action="">
+                       
+                       <div class="form-group">
+                       <label for="exampleSelect1exampleFormControlSelect1">Select Weather</label>
+                       <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Sunny</option>
+                          <option>Cloudy</option>
+                          <option>Sunny ＆ sometimes Cloudy</option>
+                          <option>Cloudy ＆ sometimes Rain</option>
+                          <option>Rain</option>
+                       </select>
+                      </div>
+                      <label for="name">NickName</label>
+                       <input id="name" type="text" name="" id="" class="form-control">
+                       <%# <label for="email">image</label>
+                       <input id="email" type="text" name="" id="" class="form-control"> %>
+                       <label for="message">comment</label>
+                       <textarea name="" id="message" cols="30" rows="5" class="form-control"></textarea>
+                       <button class="mt-2 btn btn-primary">Send Message</button>
+                   </form>
+                   <a class="nav-link" href="/">Top</a>
+               
+               </div>
+           </div>
+           <div class="col-sm-6 col-md-6">
+                   <div class="contact-bg">
+                         <h4>Preview</h4>
+                         <div class="quick-contact-widget"> 
+                               <span><i class="fa fa-user" aria-hidden="true"></i> <%= current_user.nickname %></span>
+                               <span><i class="fa fa-sun" aria-hidden="true"></i>now weather </span>
+                               <span><i class="fa fa-map-marker"></i> 現在地 </span>
+                           </div>
+                       </div>
+                       <div class="p-2 white-bg mt-3">
+                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.707593478482!2d139.69656201520007!3d35.659575238766934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca9cd6c1c87%3A0x55a2a75ba417e072!2sSHIBUYA109!5e0!3m2!1sja!2sjp!4v1561073129788!5m2!1sja!2sjp" width="500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                       </div>
+           </div>
+       </div>
+   </div>
+
+
+

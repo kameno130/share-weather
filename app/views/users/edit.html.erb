@@ -1,0 +1,31 @@
+<div class="container-fluid" >
+  <div class="row no-gutter">
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <% if user_signed_in? %>
+              <h3 class="login-heading mb-4">See you!  <%= current_user.nickname %></h3>
+              
+
+               
+                <%# <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit" >Sign out %>
+                <%= link_to "sign out", destroy_user_session_path, method: :delete, class:"btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" %>
+                </button>
+                
+                <% else %>
+                <h3 class="login-heading mb-4">Hello!!  </h3>
+                <a class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"  role="button" href="/users/sign_in" >Sign in</a> 
+                <% end %>
+                <a class="root-link" href="/" >Top Page</a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
